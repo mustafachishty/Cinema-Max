@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmed - CinemaMax</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-film"></i>
+                <span>CinemaMax</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="order-page">
+        <div class="container">
+            <div class="order-container">
+                <div class="order-header">
+                    <i class="fas fa-check-circle" style="color: #4CAF50;"></i>
+                    <h1>Booking Confirmed!</h1>
+                    <p>Thank you for choosing CinemaMax. Your tickets have been booked successfully.</p>
+                </div>
+                
+                <div class="order-details">
+                    <!-- Confirmation details will be loaded dynamically -->
+                </div>
+                
+                <div class="confirmation-message" style="background: #1a4d1a; padding: 1.5rem; border-radius: 10px; margin: 2rem 0; text-align: center;">
+                    <i class="fas fa-mobile-alt" style="font-size: 2rem; color: #4CAF50; margin-bottom: 1rem;"></i>
+                    <p style="color: #4CAF50; font-weight: 600; margin-bottom: 0.5rem;">E-tickets sent to your email!</p>
+                    <p style="color: #ccc; font-size: 0.9rem;">Please arrive 15 minutes before showtime</p>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="btn-secondary" onclick="window.print()">
+                        <i class="fas fa-print"></i>
+                        Print Tickets
+                    </button>
+                    <button class="proceed-button" onclick="newBooking()">
+                        <i class="fas fa-plus"></i>
+                        Book Another Movie
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-film"></i> CinemaMax</h3>
+                    <p>Your premier destination for movie entertainment</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CinemaMax. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            loadConfirmation();
+            initializeNavigation();
+            
+            // Add celebration animation
+            setTimeout(() => {
+                const icon = document.querySelector('.order-header i');
+                if (icon) {
+                    icon.style.animation = 'bounce 1s ease infinite';
+                }
+            }, 500);
+        });
+        
+        // Add bounce animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes bounce {
+                0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+                40% { transform: translateY(-10px); }
+                60% { transform: translateY(-5px); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

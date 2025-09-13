@@ -1,0 +1,16 @@
+{
+  "name": "cinemamax-booking",
+  "version": "1.0.0",
+  "description": "Professional movie ticket booking website",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve -s .",
+    "build": "echo 'No build step required for static site'"
+  },
+  "keywords": ["movie", "booking", "cinema", "tickets"],
+  "author": "CinemaMax",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.0.0"
+  }
+}

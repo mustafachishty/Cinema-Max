@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Seats - CinemaMax</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-film"></i>
+                <span>CinemaMax</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="seat-selection">
+        <div class="container">
+            <button class="btn-secondary" onclick="goBack()" style="margin-bottom: 2rem;">
+                <i class="fas fa-arrow-left"></i> Back to Movie Details
+            </button>
+            
+            <h1 class="section-title">Select Your Seats</h1>
+            
+            <div class="cinema-layout">
+                <div class="screen"></div>
+                
+                <div class="seats-grid">
+                    <!-- Seats will be generated dynamically -->
+                </div>
+                
+                <div class="seat-legend">
+                    <div class="legend-item">
+                        <div class="legend-seat" style="background: #4CAF50;"></div>
+                        <span>Available</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-seat" style="background: #ff6b6b;"></div>
+                        <span>Selected</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-seat" style="background: #666;"></div>
+                        <span>Occupied</span>
+                    </div>
+                </div>
+                
+                <div class="booking-summary">
+                    <!-- Booking summary will be updated dynamically -->
+                </div>
+                
+                <button class="proceed-button" onclick="proceedToOrder()" disabled>
+                    <i class="fas fa-arrow-right"></i>
+                    Proceed to Payment
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-film"></i> CinemaMax</h3>
+                    <p>Your premier destination for movie entertainment</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CinemaMax. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeSeatSelection();
+            initializeNavigation();
+        });
+    </script>
+</body>
+</html>

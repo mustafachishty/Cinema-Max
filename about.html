@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - CinemaMax</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-film"></i>
+                <span>CinemaMax</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="container">
+            <h1 class="section-title">About CinemaMax</h1>
+            
+            <div class="content-section">
+                <h2>Our Story</h2>
+                <p>
+                    CinemaMax was founded with a simple vision: to make movie booking as seamless and enjoyable as watching the movies themselves. 
+                    Since our inception, we've been dedicated to providing movie enthusiasts with the best possible cinema experience.
+                </p>
+                <p>
+                    We believe that great movies deserve great presentation, and that starts with making it easy for you to find and book 
+                    your perfect movie experience. From the latest blockbusters to indie gems, we're here to connect you with the stories 
+                    that matter to you.
+                </p>
+            </div>
+
+            <div class="content-section">
+                <h2>Why Choose CinemaMax?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Lightning Fast</h3>
+                        <p>Book your tickets in under 60 seconds with our streamlined booking process.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Secure & Safe</h3>
+                        <p>Your personal and payment information is protected with industry-leading security.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Mobile Friendly</h3>
+                        <p>Enjoy a seamless experience across all devices - desktop, tablet, or mobile.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-star"></i>
+                        <h3>Premium Experience</h3>
+                        <p>Choose from the best seats with our interactive seating chart and real-time availability.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>24/7 Booking</h3>
+                        <p>Book your tickets anytime, anywhere. We're always open for your convenience.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-headset"></i>
+                        <h3>Customer Support</h3>
+                        <p>Our friendly support team is always ready to help with any questions or concerns.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2>Our Mission</h2>
+                <p>
+                    To revolutionize the movie-going experience by providing an intuitive, fast, and reliable platform 
+                    that connects movie lovers with their favorite films. We strive to eliminate the hassle from ticket 
+                    booking so you can focus on what matters most - enjoying great cinema.
+                </p>
+            </div>
+
+            <div class="content-section">
+                <h2>Our Values</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <div>
+                        <h3 style="color: #ff6b6b; margin-bottom: 1rem;">
+                            <i class="fas fa-heart"></i> Customer First
+                        </h3>
+                        <p>Every decision we make is guided by what's best for our customers and their movie experience.</p>
+                    </div>
+                    <div>
+                        <h3 style="color: #ff6b6b; margin-bottom: 1rem;">
+                            <i class="fas fa-rocket"></i> Innovation
+                        </h3>
+                        <p>We continuously improve our platform with the latest technology to serve you better.</p>
+                    </div>
+                    <div>
+                        <h3 style="color: #ff6b6b; margin-bottom: 1rem;">
+                            <i class="fas fa-handshake"></i> Reliability
+                        </h3>
+                        <p>You can count on us to deliver a consistent, dependable service every time you visit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-film"></i> CinemaMax</h3>
+                    <p>Your premier destination for movie entertainment</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CinemaMax. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeNavigation();
+            
+            // Add animation to feature cards
+            const cards = document.querySelectorAll('.feature-card');
+            cards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.1}s`;
+                card.classList.add('fade-in');
+            });
+        });
+    </script>
+</body>
+</html>
