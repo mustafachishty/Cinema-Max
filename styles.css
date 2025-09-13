@@ -530,40 +530,21 @@ body {
         background: rgba(255, 107, 107, 0.2);
         transform: none;
     }
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        flex-direction: column;
-        background: rgba(0, 0, 0, 0.95);
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        padding: 2rem 0;
-        z-index: 999;
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .nav-link {
-        margin: 0.5rem 0;
-        padding: 1rem;
-        width: 100%;
-    }
 
     .hero-title {
         font-size: 2.5rem;
     }
 
-    .movies-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .movies-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 }
 
@@ -952,35 +933,7 @@ body {
         flex-direction: column;
     }
 }
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        flex-direction: column;
-        background: rgba(0, 0, 0, 0.95);
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        padding: 2rem 0;
-    }
 
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .hero-title {
-        font-size: 2.5rem;
-    }
-
-    .movies-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .footer-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-}
 
 /* Movie Details Page */
 .movie-details {
